@@ -22,6 +22,8 @@
 		EECC2254287DA78C00EA84AC /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC224D287DA78C00EA84AC /* Movie+Upcoming.swift */; };
 		EECC2255287DA78C00EA84AC /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC224F287DA78C00EA84AC /* Movie+Popular.swift */; };
 		EECC2257287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */; };
+		EECC2259287EF26C00EA84AC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2258287EF26C00EA84AC /* DetailsViewController.swift */; };
+		EECC225B287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		EECC224F287DA78C00EA84AC /* Movie+Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
 		EECC2250287DA78C00EA84AC /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
 		EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturesViewController+UiCollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		EECC2258287EF26C00EA84AC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,9 @@
 			children = (
 				EECC223028738D4F00EA84AC /* FeaturedViewController.swift */,
 				EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */,
+				EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */,
 				EECC2249287D960300EA84AC /* Modelo */,
+				EECC2258287EF26C00EA84AC /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,9 +211,11 @@
 				EECC2241287C45D200EA84AC /* PopularCollectionViewCell.swift in Sources */,
 				EECC2248287D95F200EA84AC /* Filme.swift in Sources */,
 				EECC2257287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift in Sources */,
+				EECC225B287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				EECC223128738D4F00EA84AC /* FeaturedViewController.swift in Sources */,
 				EECC222D28738D4F00EA84AC /* AppDelegate.swift in Sources */,
 				EECC222F28738D4F00EA84AC /* SceneDelegate.swift in Sources */,
+				EECC2259287EF26C00EA84AC /* DetailsViewController.swift in Sources */,
 				EECC2243287C467C00EA84AC /* NowplayingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
