@@ -94,7 +94,6 @@
 				EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */,
 				EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */,
 				EECC2249287D960300EA84AC /* Modelo */,
-				EECC2258287EF26C00EA84AC /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +127,7 @@
 				EECC2250287DA78C00EA84AC /* Movie+TrendingToday.swift */,
 				EECC224D287DA78C00EA84AC /* Movie+Upcoming.swift */,
 				EECC2247287D95F200EA84AC /* Filme.swift */,
+				EECC2258287EF26C00EA84AC /* DetailsViewController.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
