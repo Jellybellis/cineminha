@@ -25,7 +25,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellidentifier, for: indexPath) as? PopularCollectionViewCell
         
         cell?.titleLabel.text = popularMovies[indexPath.item].title
-        cell?.imageView.image = UIImage(named: popularMovies[indexPath.item].backdrop)
+        cell?.imageView.image = UIImage(named: popularMovies[indexPath.item].backdropPath)
         
         return cell ?? PopularCollectionViewCell()
     }
@@ -36,7 +36,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         cell?.titleLabel.text = nowPlayingMovies [indexPath.item].title
         let year: String = String(nowPlayingMovies [indexPath.item].releaseDate.prefix(4))
         cell?.dateLabel.text = year
-        cell?.imageView.image = UIImage(named: nowPlayingMovies [indexPath.item].poster)
+        cell?.imageView.image = UIImage(named: nowPlayingMovies [indexPath.item].posterPath)
         
         return cell ?? NowplayingCollectionViewCell()
     }

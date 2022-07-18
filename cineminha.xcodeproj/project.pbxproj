@@ -15,7 +15,6 @@
 		EECC223928738D5000EA84AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECC223728738D5000EA84AC /* LaunchScreen.storyboard */; };
 		EECC2241287C45D200EA84AC /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2240287C45D200EA84AC /* PopularCollectionViewCell.swift */; };
 		EECC2243287C467C00EA84AC /* NowplayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2242287C467C00EA84AC /* NowplayingCollectionViewCell.swift */; };
-		EECC2248287D95F200EA84AC /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2247287D95F200EA84AC /* Filme.swift */; };
 		EECC2251287DA78C00EA84AC /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2250287DA78C00EA84AC /* Movie+TrendingToday.swift */; };
 		EECC2252287DA78C00EA84AC /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC224C287DA78C00EA84AC /* Movie+TrendingThisWeek.swift */; };
 		EECC2253287DA78C00EA84AC /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC224E287DA78C00EA84AC /* Movie+NowPlaying.swift */; };
@@ -24,6 +23,10 @@
 		EECC2257287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */; };
 		EECC2259287EF26C00EA84AC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC2258287EF26C00EA84AC /* DetailsViewController.swift */; };
 		EECC225B287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */; };
+		EECC225D2881974C00EA84AC /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EECC225C2881974C00EA84AC /* TMDB-Info.plist */; };
+		EECC225F28819DCA00EA84AC /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC225E28819DCA00EA84AC /* Movie+API.swift */; };
+		EECC22612881A0C700EA84AC /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC22602881A0C700EA84AC /* Filme.swift */; };
+		EECC22632881AE8B00EA84AC /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC22622881AE8B00EA84AC /* MovieResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +40,6 @@
 		EECC223A28738D5000EA84AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECC2240287C45D200EA84AC /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		EECC2242287C467C00EA84AC /* NowplayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowplayingCollectionViewCell.swift; sourceTree = "<group>"; };
-		EECC2247287D95F200EA84AC /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Filme.swift; path = cineminha/Controller/Modelo/Filme.swift; sourceTree = SOURCE_ROOT; };
 		EECC224C287DA78C00EA84AC /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
 		EECC224D287DA78C00EA84AC /* Movie+Upcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
 		EECC224E287DA78C00EA84AC /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturesViewController+UiCollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		EECC2258287EF26C00EA84AC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		EECC225C2881974C00EA84AC /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
+		EECC225E28819DCA00EA84AC /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+API.swift"; sourceTree = "<group>"; };
+		EECC22602881A0C700EA84AC /* Filme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
+		EECC22622881AE8B00EA84AC /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			children = (
 				EECC222C28738D4F00EA84AC /* AppDelegate.swift */,
 				EECC222E28738D4F00EA84AC /* SceneDelegate.swift */,
+				EECC2249287D960300EA84AC /* Modelo */,
 				EECC2246287C481900EA84AC /* SupportingFiles */,
 				EECC2244287C470100EA84AC /* Controller */,
 				EECC2245287C472D00EA84AC /* Views */,
@@ -93,7 +100,7 @@
 				EECC223028738D4F00EA84AC /* FeaturedViewController.swift */,
 				EECC2256287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift */,
 				EECC225A287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift */,
-				EECC2249287D960300EA84AC /* Modelo */,
+				EECC2258287EF26C00EA84AC /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,6 +121,7 @@
 			children = (
 				EECC223A28738D5000EA84AC /* Info.plist */,
 				EECC223528738D5000EA84AC /* Assets.xcassets */,
+				EECC225C2881974C00EA84AC /* TMDB-Info.plist */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -121,13 +129,14 @@
 		EECC2249287D960300EA84AC /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				EECC22602881A0C700EA84AC /* Filme.swift */,
+				EECC225E28819DCA00EA84AC /* Movie+API.swift */,
 				EECC224E287DA78C00EA84AC /* Movie+NowPlaying.swift */,
 				EECC224F287DA78C00EA84AC /* Movie+Popular.swift */,
 				EECC224C287DA78C00EA84AC /* Movie+TrendingThisWeek.swift */,
 				EECC2250287DA78C00EA84AC /* Movie+TrendingToday.swift */,
 				EECC224D287DA78C00EA84AC /* Movie+Upcoming.swift */,
-				EECC2247287D95F200EA84AC /* Filme.swift */,
-				EECC2258287EF26C00EA84AC /* DetailsViewController.swift */,
+				EECC22622881AE8B00EA84AC /* MovieResponse.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECC223928738D5000EA84AC /* LaunchScreen.storyboard in Resources */,
+				EECC225D2881974C00EA84AC /* TMDB-Info.plist in Resources */,
 				EECC223628738D5000EA84AC /* Assets.xcassets in Resources */,
 				EECC223428738D4F00EA84AC /* Main.storyboard in Resources */,
 			);
@@ -205,16 +215,18 @@
 			files = (
 				EECC2254287DA78C00EA84AC /* Movie+Upcoming.swift in Sources */,
 				EECC2251287DA78C00EA84AC /* Movie+TrendingToday.swift in Sources */,
+				EECC225F28819DCA00EA84AC /* Movie+API.swift in Sources */,
+				EECC22612881A0C700EA84AC /* Filme.swift in Sources */,
 				EECC2255287DA78C00EA84AC /* Movie+Popular.swift in Sources */,
 				EECC2253287DA78C00EA84AC /* Movie+NowPlaying.swift in Sources */,
 				EECC2252287DA78C00EA84AC /* Movie+TrendingThisWeek.swift in Sources */,
 				EECC2241287C45D200EA84AC /* PopularCollectionViewCell.swift in Sources */,
-				EECC2248287D95F200EA84AC /* Filme.swift in Sources */,
 				EECC2257287DC16100EA84AC /* FeaturesViewController+UiCollectionViewDataSource.swift in Sources */,
 				EECC225B287EF4A900EA84AC /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				EECC223128738D4F00EA84AC /* FeaturedViewController.swift in Sources */,
 				EECC222D28738D4F00EA84AC /* AppDelegate.swift in Sources */,
 				EECC222F28738D4F00EA84AC /* SceneDelegate.swift in Sources */,
+				EECC22632881AE8B00EA84AC /* MovieResponse.swift in Sources */,
 				EECC2259287EF26C00EA84AC /* DetailsViewController.swift in Sources */,
 				EECC2243287C467C00EA84AC /* NowplayingCollectionViewCell.swift in Sources */,
 			);
