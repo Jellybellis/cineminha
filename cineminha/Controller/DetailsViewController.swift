@@ -8,6 +8,8 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+   
+    var movie: Movie?
     
     @IBOutlet var backdropImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
@@ -15,15 +17,18 @@ class DetailsViewController: UIViewController {
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
     
-    var movie: Movie?
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
-        print(movie)
+        backdropImage.layer.borderWidth = 1
+        backdropImage.layer.borderColor = UIColor.lightGray.cgColor
+        backdropImage.layer.cornerRadius = 12
         
+        posterImage.layer.borderWidth = 1
+        posterImage.layer.borderColor = UIColor.lightGray.cgColor
+        posterImage.layer.cornerRadius = 6
         
         guard let movie = movie else {
             return
@@ -35,7 +40,21 @@ class DetailsViewController: UIViewController {
         posterImage.image = UIImage(named: movie.posterPath)
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
+        
+        Task{
+            let backdropURL = await Movie.downloadImageData(withPath: movie.backdropPath)
+            let backdrop = UIImage(data: backdropURL) ?? UIImage()
+            self.backdropImage.image = backdrop
+            
+            let posterURL = await Movie.downloadImageData(withPath: movie.posterPath)
+            let poster = UIImage(data: posterURL) ?? UIImage()
+            self.posterImage.image = poster
+            
+        }
     }
+    
+    
+    
     
 
 }

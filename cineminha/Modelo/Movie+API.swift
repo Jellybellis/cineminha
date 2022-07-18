@@ -36,6 +36,80 @@ extension Movie {
         
         return []
     }
+    
+    
+    static func nowPlayingMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponent
+        components.path = "/3/movie/now_playing"
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+        ]
+        
+        let session = URLSession.shared
+        
+        do{
+            let (data, response) = try await session.data(from: components.url!)
+            
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let movieResult = try decoder.decode(MovieResponse.self, from: data)
+            
+            return movieResult.results
+            
+        } catch {
+            print(error)
+        }
+        
+        return []
+    }
+    
+    static func upcomingMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponent
+        components.path = "/3/movie/upcoming"
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+        ]
+        
+        let session = URLSession.shared
+        
+        do{
+            let (data, response) = try await session.data(from: components.url!)
+            
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let movieResult = try decoder.decode(MovieResponse.self, from: data)
+            
+            return movieResult.results
+            
+        } catch {
+            print(error)
+        }
+        
+        return []
+    }
+    
+    //MARK: - Download de imagens
+    
+    static func downloadImageData(withPath: String) async -> Data{
+        let urlString = "https://image.tmdb.org/t/p/w780\(withPath)"
+        let url: URL = URL(string: urlString)!
+        
+        let session = URLSession.shared
+        session.configuration.requestCachePolicy = .returnCacheDataElseLoad
+        do {
+            let (imageData, response) = try await session.data(from: url)
+            
+            return imageData
+            
+        } catch {
+            print(error)
+        }
+        
+        return Data()
+    }
+    
 
     // MARK: - Recuperando a chave da API de um arquivo
     static var apiKey: String {

@@ -27,6 +27,7 @@
 		EECC225F28819DCA00EA84AC /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC225E28819DCA00EA84AC /* Movie+API.swift */; };
 		EECC22612881A0C700EA84AC /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC22602881A0C700EA84AC /* Filme.swift */; };
 		EECC22632881AE8B00EA84AC /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC22622881AE8B00EA84AC /* MovieResponse.swift */; };
+		EECC22652885AB6F00EA84AC /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC22642885AB6F00EA84AC /* UpcomingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		EECC225E28819DCA00EA84AC /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+API.swift"; sourceTree = "<group>"; };
 		EECC22602881A0C700EA84AC /* Filme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 		EECC22622881AE8B00EA84AC /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		EECC22642885AB6F00EA84AC /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				EECC2240287C45D200EA84AC /* PopularCollectionViewCell.swift */,
+				EECC22642885AB6F00EA84AC /* UpcomingCollectionViewCell.swift */,
 				EECC2242287C467C00EA84AC /* NowplayingCollectionViewCell.swift */,
 				EECC223228738D4F00EA84AC /* Main.storyboard */,
 				EECC223728738D5000EA84AC /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 			files = (
 				EECC2254287DA78C00EA84AC /* Movie+Upcoming.swift in Sources */,
 				EECC2251287DA78C00EA84AC /* Movie+TrendingToday.swift in Sources */,
+				EECC22652885AB6F00EA84AC /* UpcomingCollectionViewCell.swift in Sources */,
 				EECC225F28819DCA00EA84AC /* Movie+API.swift in Sources */,
 				EECC22612881A0C700EA84AC /* Filme.swift in Sources */,
 				EECC2255287DA78C00EA84AC /* Movie+Popular.swift in Sources */,
