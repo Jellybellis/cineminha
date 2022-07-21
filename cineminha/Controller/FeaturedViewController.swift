@@ -25,6 +25,15 @@ class FeaturedViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 250.0 - 6, height: (nowPlayingCollectionView.frame.height/3) - 3)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 3
+        layout.minimumLineSpacing = 6
+        nowPlayingCollectionView!.collectionViewLayout = layout
+
+        navigationController?.navigationBar.barTintColor = UIColor.black
         
         popularCollectionView.dataSource = self
         popularCollectionView.delegate = self

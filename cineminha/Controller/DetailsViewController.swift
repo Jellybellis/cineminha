@@ -16,6 +16,10 @@ class DetailsViewController: UIViewController {
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
+    @IBOutlet var overviewView: UIView!
+    @IBOutlet var ratingView: UIView!
+    
+    
     
    
     override func viewDidLoad() {
@@ -29,6 +33,11 @@ class DetailsViewController: UIViewController {
         posterImage.layer.borderWidth = 1
         posterImage.layer.borderColor = UIColor.lightGray.cgColor
         posterImage.layer.cornerRadius = 6
+        
+        overviewView.layer.cornerRadius = 15
+        ratingView.layer.cornerRadius = 15
+        
+        
         
         guard let movie = movie else {
             return

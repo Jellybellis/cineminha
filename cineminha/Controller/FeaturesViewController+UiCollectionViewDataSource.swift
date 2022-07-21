@@ -41,6 +41,9 @@ extension FeaturedViewController: UICollectionViewDataSource {
     
     fileprivate func makeNowPlayingCell(_ indexPath: IndexPath) -> NowplayingCollectionViewCell {
         let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowplayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowplayingCollectionViewCell
+        cell?.layer.cornerRadius = 12
+      
+        
         
         let movie = nowPlayingMovies[indexPath.item]
         let year: String = String(movie.releaseDate.prefix(4))
